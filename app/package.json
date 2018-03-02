@@ -1,0 +1,17 @@
+{
+  "name": "gamebackend",
+  "version": "1.0.0",
+  "description": "Game Backend API example",
+  "main": "s2s.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Mika Isomaa",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.5",
+    "mongoose": "^4.10.8",
+    "node-uuid": "^1.4.8",
+    "uuid": "^3.1.0"
+  }
+}

@@ -1,0 +1,10 @@
+#
+# Copy this file into a new file called ".env" and modify it to contain
+# correct values for environment variables: EXTERNAL_HOST_PORT, 
+# INTERNAL_DOCKER_PORT and UNITYADSSECRET
+# NOTE: .env file should not be added to git as its contents are sensitive
+#
+EXTERNAL_HOST_PORT=1337
+INTERNAL_DOCKER_PORT=1337
+UNITYADSSECRET=65018c8a1ef0b505ced4608804695b3f
+

@@ -1,0 +1,22 @@
+version: "2"
+services:
+  web:
+    build: 
+      context: .
+      args:
+        - "PORT=${INTERNAL_DOCKER_PORT}"
+    ports:
+      - "${EXTERNAL_HOST_PORT}:${INTERNAL_DOCKER_PORT}"
+    links:
+      - mongodb
+    environment:
+      - "PORT=${INTERNAL_DOCKER_PORT}"
+      - "UNITYADSSECRET=${UNITYADSSECRET}"
+
+  mongodb:
+    image: mongo
+    volumes:
+      - my_application_db:/data/db
+
+volumes:
+  my_application_db:
